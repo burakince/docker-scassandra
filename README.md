@@ -1,5 +1,5 @@
 # docker-scassandra
-Stub Apache Cassandra Docker Image
+Stubbed Apache Cassandra Docker Image
 
 This project using [Stub Apache Cassandra Project](https://github.com/scassandra/scassandra-server/).
 
