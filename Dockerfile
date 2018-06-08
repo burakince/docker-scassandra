@@ -23,4 +23,4 @@ FROM openjdk:8u171-jre-stretch
 
 COPY --from=build /scassandra-server/server/build/libs/scassandra-server-standalone.jar /scassandra-server-standalone.jar
 
-ENTRYPOINT [ "java", "-jar", "/scassandra-server-standalone.jar" ]
+ENTRYPOINT [ "java", "-jar", "-Dscassandra.binary.listen-address=0.0.0.0", "-Dscassandra.admin.listen-address=0.0.0.0", "/scassandra-server-standalone.jar" ]
