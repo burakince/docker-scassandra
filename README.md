@@ -5,7 +5,7 @@ Stubbed Apache Cassandra Docker Image
 
 Latest SCassandra: [![scassandra tag](https://img.shields.io/github/tag/scassandra/scassandra-server.svg)](https://github.com/scassandra/scassandra-server)
 
-This project using [Stub Apache Cassandra Project](https://github.com/scassandra/scassandra-server/).
+This project using [Stubbed Apache Cassandra Project](https://github.com/scassandra/scassandra-server/).
 
 Documentation about scassandra project http://scassandra-docs.readthedocs.io/en/latest/standalone/overview/
 
@@ -22,7 +22,6 @@ docker run --rm -p 8042:8042 -p 8043:8043 burakince/scassandra
 
 ```
 curl -0 -v -X POST http://localhost:8043/prime-prepared-single \
-  -H "Accept: application/json" \
   -H 'Content-Type: application/json; charset=utf-8' \
   -d @- << EOF
 
